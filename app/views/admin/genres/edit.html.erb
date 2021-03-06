@@ -1,0 +1,6 @@
+<h1>ジャンル編集ページ</h1>
+  <%= form_with model: @genres, local:true do |f| %>
+    <label for="name">ジャンル名</label></br>
+    <%= f.text_field :name %></br>
+    <%= f.submit 'ジャンル名編集' %>
+  <% end %>

@@ -1,0 +1,11 @@
+<h1>商品編集ページ</h1>
+  <%= form_with model: @items, local:true do |f| %>
+    <label for="name">商品名</label></br>
+    <%= f.text_field :name %></br>
+    <label for="introduction">商品説明</label></br>
+    <%= f.text_area :introduction %></br>
+    <label for="price">税抜き価格</label></br>
+    <%= f.text_field :price %></br>
+    <label>商品画像</label></br></br>
+    <%= f.submit '商品編集' %>
+  <% end %>
